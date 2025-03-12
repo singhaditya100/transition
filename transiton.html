@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .transition{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+        }
+
+        
+        .transition:hover{
+            transform: rotate(560deg);
+            transition: 5s;
+            background-color: brown;
+            
+            
+
+           
+        }
+
+
+        .translate{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(47, 235, 30);
+            transition: all 3s ease-out;
+/* effects that can also be applied are ease , ease-in , eas-in-out , ease-out , linear */
+            &:hover{
+                /* this is used to combine the parent an child property to find and improve readability  */
+            height: 100px;
+            width: 100px;
+            background-color: rgb(120, 184, 115);
+            transform: translateX(200px);
+
+            }
+        }
+
+        .translate1{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(207, 10, 154);
+            transition: all 3s ease-out;
+/* effects that can also be applied are ease , ease-in , eas-in-out , ease-out , linear */
+            &:hover{
+                /* this is used to combine the parent an child property to find and improve readability  */
+            height: 100px;
+            width: 100px;
+            background-color: rgb(184, 115, 163);
+            transform: translateY(200px);
+
+            }
+        }
+
+
+        .scale{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(213, 100, 19);
+            transition:3s;
+
+            &:hover{
+                transform: scale(1.5);
+
+            }
+
+        }
+        /* &hover{
+        } */
+
+    </style>
+</head>
+<body>
+    <center><div class="transition">Rotate/Hover</center>
+    
+         
+    </div><br>
+
+    <center><div class="translate">TranslateX</center>
+    
+         
+    </div><br>
+
+    <center><div class="translate1">TranslateY</center><br>
+
+    </div>
+
+    <center><div class="scale">Scale</center><br>
+
+    </div>
+        </body>
+</body>
+</html>
